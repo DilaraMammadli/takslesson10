@@ -1,0 +1,17 @@
+
+
+{%extends 'base.html'%}
+{%block body%}
+<H1>CREATE</H1>
+<form method="POST">
+    {%csrf_token%}
+    <!-- {{form}} -->
+    <!-- <label>title:<input type="text"></label>
+    <label>author_name:<input type="text"></label>
+    <label>content:<input type="text"></label> -->
+
+    {{form}}
+    <button>Submit</button>
+    
+</form>
+{%endblock body%}
